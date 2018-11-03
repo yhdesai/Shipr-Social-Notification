@@ -1,1 +1,1 @@
-web: gunicorn Django.wsgi --log-file=-
+web: gunicorn MT_Notification.wsgi --log-file=-
