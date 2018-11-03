@@ -10,7 +10,7 @@ config = {
     'projectId': "mtnotification-4f3f1",
     'storageBucket': "mtnotification-4f3f1.appspot.com",
     'messagingSenderId': "1069791168310",
-    'serviceAccount': './Static/mtnotification-4f3f1-firebase-adminsdk-4say5-61aaebd488.json',
+    'serviceAccount': './static/mtnotification-4f3f1-firebase-adminsdk-4say5-61aaebd488.json',
 }
 
 firebase = pyrebase.initialize_app(config)
