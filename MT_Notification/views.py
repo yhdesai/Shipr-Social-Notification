@@ -31,6 +31,6 @@ def notify(request):
         return render(request, 'blank.html')
     name = database.child('chat').child(topic).child(key).child('name').get().pyres
     text = database.child('chat').child(topic).child(key).child('text').get().pyres
-    message = name + ": " + text
-    status = server.notify_topic_subscribers(topic_name=topic, message_body=message, message_title=topic)
+    message = {"name":name, "message":text, "topic":topic}
+    server.notify_topic_subscribers(topic_name=topic, data_message=message)
     return render(request, 'blank.html')
