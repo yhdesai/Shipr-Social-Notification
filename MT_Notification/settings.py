@@ -137,4 +137,3 @@ try:
     from .local_settings import *
 except ImportError:
     print("Local settings failed")
-
